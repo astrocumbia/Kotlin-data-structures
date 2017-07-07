@@ -5,7 +5,7 @@ class LinkedList {
 
     private var head: Node? = null
     private var tail: Node? = null
-    public var length: Int = 0
+    private var length: Int = 0
 
     constructor() {
         length = 0
@@ -33,6 +33,10 @@ class LinkedList {
         return if(head == null) true else false
     }
 
+    fun size(): Int {
+        return length
+    }
+
     fun get(index: Int): Any {
         if (index >= length)
             return -1;
@@ -54,7 +58,7 @@ fun main(args: Array<String>) {
     linkedList.add(1)
     linkedList.add(true)
     println("isEmpty() => " + linkedList.isEmpty())
-    println("length => " + linkedList.length)
+    println("length => " + linkedList.size())
     println("get() => " + linkedList.get(0))
     println("get() => " + linkedList.get(1))
     println("get() => " + linkedList.get(2))
@@ -63,5 +67,5 @@ fun main(args: Array<String>) {
 
     linkedList.clear()
     println("isEmpty() => " + linkedList.isEmpty())
-    println("length => " + linkedList.length)
+    println("length => " + linkedList.size())
 }
