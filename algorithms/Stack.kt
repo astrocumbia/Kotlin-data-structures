@@ -41,32 +41,3 @@ class Stack {
     }
     
 }
-
-fun main(args: Array<String>) {
-    var stack = Stack()
-    println("isEmpty " + stack.isEmpty())
-    println("size " + stack.size())
-    stack.push(1)
-    println("isEmpty " + stack.isEmpty())
-    println("size " + stack.size())
-    println("pop " + stack.pop())
-    println("isEmpty " + stack.isEmpty())
-    println("size " + stack.size())
-
-    stack.push(false)
-    stack.push("uno")
-    stack.push(2.0)
-    stack.push(3)
-    stack.push(4)
-    stack.push(5)
-    stack.push(6)
-    stack.push(7)
-    stack.push(8)
-
-    while (!stack.isEmpty()) {
-        println("pop " + stack.pop())
-    }
-
-    println("isEmpty " + stack.isEmpty())
-    println("size " + stack.size())
-}

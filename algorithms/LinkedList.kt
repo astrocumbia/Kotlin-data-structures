@@ -1,4 +1,3 @@
-package Algorithms
 
 class LinkedList {
     data class Node(var next: Node?, var value:Any)
@@ -48,24 +47,4 @@ class LinkedList {
         }
         return node?.value ?: -1
     }
-}
-
-fun main(args: Array<String>) {
-    val linkedList = LinkedList()
-    println("isEmpty() => " + linkedList.isEmpty())
-    linkedList.add(0.0)
-    linkedList.add("Joa")
-    linkedList.add(1)
-    linkedList.add(true)
-    println("isEmpty() => " + linkedList.isEmpty())
-    println("length => " + linkedList.size())
-    println("get() => " + linkedList.get(0))
-    println("get() => " + linkedList.get(1))
-    println("get() => " + linkedList.get(2))
-    println("get() => " + linkedList.get(3))
-    println("get() => " + linkedList.get(3))
-
-    linkedList.clear()
-    println("isEmpty() => " + linkedList.isEmpty())
-    println("length => " + linkedList.size())
 }
